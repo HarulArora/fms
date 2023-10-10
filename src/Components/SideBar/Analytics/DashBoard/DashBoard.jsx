@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumb from "../../Breadcrumb/Breadcrumb";
 import Card from "./Card/Card";
+import Graph from "./Graphs/Graph";
 // import { Link, NavLink } from 'react-router-dom'
 function DashBoard() {
   return (
@@ -31,6 +32,7 @@ function DashBoard() {
             percentage="34% more than last Year"
           />
         </div>
+        <Graph />
       </div>
     </>
   );
