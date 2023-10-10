@@ -8,11 +8,11 @@ import PieGraph from "./Graphs/PieGraph";
 function DashBoard() {
   return (
     <>
-      <div className="p-5">
+      <div className="p-5 dark:bg-red-300 bg-white">
         <div>
           <Breadcrumb category="ANALYTICS" page="Dashboard" />
         </div>
-        <div className="flex gap-8 mt-5 flex-wrap mb-10">
+        <div className="grid xl:grid-cols-4 gap-x-3 md:grid-cols-2 gap-y-3 mb-10 mt-8">
           <Card
             heading="Students"
             number="4000"
@@ -34,7 +34,9 @@ function DashBoard() {
             percentage="34% more than last Year"
           />
         </div>
-        <Graph />
+        <div className="w-auto">
+          <Graph />
+        </div>
         <div className="grid grid-cols-2">
           <div>
             <BarGraph />
