@@ -66,7 +66,7 @@ export default class Example extends PureComponent {
         <ResponsiveContainer width="100%" height={200}>
           <LineChart
             width={500}
-            height={200}
+            height={700}
             data={data}
             syncId="anyId"
             margin={{

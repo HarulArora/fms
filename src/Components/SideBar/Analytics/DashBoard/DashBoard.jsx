@@ -3,14 +3,16 @@ import Breadcrumb from "../../Breadcrumb/Breadcrumb";
 import Card from "./Card/Card";
 // import { Link, NavLink } from 'react-router-dom'
 import Graph from "./Graphs/Graph";
+import BarGraph from "./Graphs/BarGraph";
+import PieGraph from "./Graphs/PieGraph";
 function DashBoard() {
   return (
     <>
-      <div className="flex-grow p-5">
+      <div className="p-5">
         <div>
           <Breadcrumb category="ANALYTICS" page="Dashboard" />
         </div>
-        <div className="flex gap-8 mt-5 flex-wrap">
+        <div className="flex gap-8 mt-5 flex-wrap mb-10">
           <Card
             heading="Students"
             number="4000"
@@ -33,6 +35,14 @@ function DashBoard() {
           />
         </div>
         <Graph />
+        <div className="grid grid-cols-2">
+          <div>
+            <BarGraph />
+          </div>
+          <div>
+            <PieGraph />
+          </div>
+        </div>
       </div>
     </>
   );
