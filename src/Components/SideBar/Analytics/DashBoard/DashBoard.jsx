@@ -5,7 +5,7 @@ import Card from "./Card/Card";
 function DashBoard() {
   return (
     <>
-      <div className="flex-grow p-5">
+      <div className="flex-grow p-5 dark:bg-red-200 bg-white">
         <div>
           <Breadcrumb category="ANALYTICS" page="Dashboard" />
         </div>
