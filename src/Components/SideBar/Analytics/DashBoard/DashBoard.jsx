@@ -1,3 +1,4 @@
+import React from "react";
 import Breadcrumb from "../../Breadcrumb/Breadcrumb";
 import Card from "./Card/Card";
 // import { Link, NavLink } from 'react-router-dom'
@@ -35,7 +36,7 @@ function DashBoard() {
                         percentage="34% more than last Year"
                     />
                 </div>
-                <div className="w-auto mb-10  grid grid-cols-2 gap-x-2 gap-y-3">
+                <div className="w-auto mb-10  grid xl:grid-cols-2 md:grid-cols-1 gap-x-2 gap-y-3">
                     <div className="p-2 border shadow-md shadow-slate-200 rounded-lg">
                         <Calenderr />
                     </div>
@@ -43,11 +44,11 @@ function DashBoard() {
                         <h1>Your X</h1>
                         <Graph />
                     </div>
-                    <div className="p-2 border shadow-md shadow-slate-200 rounded-lg flex flex-col gap-y-2 items-center justify-center">
-                        <h1>Hey</h1>
+                    <div className="p-2 border shadow-md shadow-slate-200 rounded-lg h-[300px]">
+                        {/* <h1>Hey</h1> */}
                         <PieGraph />
                     </div>
-                    <div className="p-2 border shadow-md shadow-slate-200 rounded-lg flex flex-col gap-y-2 items-center justify-center">
+                    <div className="p-2 border shadow-md shadow-slate-200 rounded-lg flex flex-col gap-y-2 items-center justify-center h-[300px]">
                         <h1>Hey</h1>
                         <BarGraph />
                     </div>
