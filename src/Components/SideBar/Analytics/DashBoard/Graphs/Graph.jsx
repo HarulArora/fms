@@ -60,8 +60,13 @@ export default class Example extends PureComponent {
 
   render() {
     return (
-      <div style={{ width: "100%" }}>
-        <p>Maybe some other content</p>
+      <div
+        style={{ width: "100%" }}
+        className="flex flex-col justify-center items-center gap-y-2"
+      >
+        <h1 className="text-[20px] font-bold hover:text-black cursor-pointer transition-all">
+          Your Earnings
+        </h1>
 
         <ResponsiveContainer width="100%" height={200}>
           <LineChart
@@ -75,6 +80,7 @@ export default class Example extends PureComponent {
               left: 0,
               bottom: 0,
             }}
+            // className="bg"
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />

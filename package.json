@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@syncfusion/ej2-react-schedule": "^23.1.39",
     "chart.js": "^4.4.0",
+    "date-fns": "^2.30.0",
     "echarts": "^5.4.3",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",

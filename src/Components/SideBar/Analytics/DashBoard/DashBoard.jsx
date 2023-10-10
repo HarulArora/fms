@@ -5,10 +5,12 @@ import Card from "./Card/Card";
 import Graph from "./Graphs/Graph";
 import BarGraph from "./Graphs/BarGraph";
 import PieGraph from "./Graphs/PieGraph";
+import Calenderr from "./Calender/Calenderr";
+
 function DashBoard() {
   return (
     <>
-      <div className="p-5 dark:bg-red-300 bg-white">
+      <div className="p-5 dark:bg-red-300 bg-white w-full">
         <div>
           <Breadcrumb category="ANALYTICS" page="Dashboard" />
         </div>
@@ -34,15 +36,21 @@ function DashBoard() {
             percentage="34% more than last Year"
           />
         </div>
-        <div className="w-auto">
-          <Graph />
-        </div>
-        <div className="grid grid-cols-2">
-          <div>
-            <BarGraph />
+        <div className="w-auto mb-10  grid grid-cols-2 gap-x-2 gap-y-3">
+          <div className="p-2 border shadow-md shadow-slate-200 rounded-lg">
+            <Calenderr />
           </div>
-          <div>
+          <div className="p-2 border shadow-md shadow-slate-200 rounded-lg flex  items-center justify-center flex-col gap-y-2">
+            <h1>Your X</h1>
+            <Graph />
+          </div>
+          <div className="p-2 border shadow-md shadow-slate-200 rounded-lg flex flex-col gap-y-2 items-center justify-center">
+            <h1>Hey</h1>
             <PieGraph />
+          </div>
+          <div className="p-2 border shadow-md shadow-slate-200 rounded-lg flex flex-col gap-y-2 items-center justify-center">
+            <h1>Hey</h1>
+            <BarGraph />
           </div>
         </div>
       </div>
